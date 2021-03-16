@@ -117,10 +117,10 @@ router.delete('/', (req, res) => {
     else if(req.query.id) {
         DailyLevel.deleteOne({ _id : req.query.id })
         .then(res => {
-            res.json({msg: 'Success! record deeted'})
+            res.json({msg: 'Success! record deleted'})
         })
         .catch(err => {
-            res.json({err : err})
+            res.json({err, msg: 'No record deleted'})
         })
     }
 })
