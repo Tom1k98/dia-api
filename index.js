@@ -16,7 +16,7 @@ mongoose.connect(dbUrl, {
     console.log(`connection to db end with error: ${err}`)
 });
 
-app.use('/api/', express.static("public"))
+app.use('/', express.static("public"))
 
 const diaRoute = require('./routes/api/dia');
 app.use('/api/dia', diaRoute);
