@@ -15,14 +15,12 @@ header {
 }
 
 header div {
-    height: 800px;
+    height: auto;
     flex-basis: 50%;
 }
 
 .title {
-   padding-top: 250px;
-   padding-left: 100px;
-    padding-right: 100px;
+   padding: 100px;
    background-color: darkblue;
    color: white;
 }
